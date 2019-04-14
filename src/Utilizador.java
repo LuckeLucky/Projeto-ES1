@@ -3,9 +3,10 @@ public class Utilizador {
     private String estado;
     private TipoUtilizador tipoutilizador;
 
-    public Utilizador(String nome, String estado) {
+    public Utilizador(String nome, String estado,TipoUtilizador tipoutilizador) {
         this.nome = nome;
         this.estado = estado;
+        this.tipoutilizador=tipoutilizador;
     }
 
     public String getNome() {
