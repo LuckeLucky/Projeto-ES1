@@ -1,16 +1,14 @@
 import java.time.LocalDate;
 
 public class Report {
-    LocalDate data;
-    Utilizador utilizador;
-    Copia copia;
-    Reparador reparador;
+    private LocalDate data;
+    private Utilizador utilizador;
+    private Copia copia;
 
-    public Report(LocalDate data, Utilizador utilizador, Copia copia, Reparador reparador) {
+    public Report(LocalDate data, Utilizador utilizador, Copia copia) {
         this.data = data;
         this.utilizador = utilizador;
         this.copia = copia;
-        this.reparador = reparador;
     }
 
     public LocalDate getData() {
@@ -23,9 +21,5 @@ public class Report {
 
     public Copia getCopia() {
         return copia;
-    }
-
-    public Reparador getReparador() {
-        return reparador;
     }
 }
