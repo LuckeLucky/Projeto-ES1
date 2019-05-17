@@ -15,6 +15,8 @@ public class RepositorioMem implements Repositorio {
     private ArrayList<PropostaAquisicao> propostasaquisicao=new ArrayList<PropostaAquisicao>();
     private ArrayList<RequisicaoCompra> requesicoescompra=new ArrayList<RequisicaoCompra>();
     private ArrayList<RequisicaoCompraLivro> requisicoescompralivro=new ArrayList<RequisicaoCompraLivro>();
+    private ArrayList<RequisicaoReparacao> requisicaoReparacaos=new ArrayList<RequisicaoReparacao>();
+    private ArrayList<Funcionario> funcionarios=new ArrayList<Funcionario>();
     public RepositorioMem() {
     }
     public void adicionaUtilizador(Utilizador utilizador){
@@ -59,6 +61,8 @@ public class RepositorioMem implements Repositorio {
     public void adicionaRequisicaoCompraLivro(RequisicaoCompraLivro requisicaoCompraLivro){
         requisicoescompralivro.add(requisicaoCompraLivro);
     }
+    public void adicionaRequisicaoReparacao(RequisicaoReparacao requisicaoReparacao){requisicaoReparacaos.add(requisicaoReparacao);}
+    public void adicionaFuncionario(Funcionario funcionario){funcionarios.add(funcionario);}
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r){
         for (int i=0 ;i<emprestimos.size();i++){
             if(r==emprestimos.get(i).getRequisicao())
