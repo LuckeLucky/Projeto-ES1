@@ -15,6 +15,7 @@ public class RepositorioMem implements Repositorio {
     private ArrayList<PropostaAquisicao> propostasaquisicao=new ArrayList<PropostaAquisicao>();
     private ArrayList<RequisicaoCompra> requesicoescompra=new ArrayList<RequisicaoCompra>();
     private ArrayList<RequisicaoCompraLivro> requisicoescompralivro=new ArrayList<RequisicaoCompraLivro>();
+    private ArrayList<Report> reportes=new ArrayList<Report>();
     public RepositorioMem() {
     }
     public void adicionaUtilizador(Utilizador utilizador){
@@ -58,6 +59,9 @@ public class RepositorioMem implements Repositorio {
     }
     public void adicionaRequisicaoCompraLivro(RequisicaoCompraLivro requisicaoCompraLivro){
         requisicoescompralivro.add(requisicaoCompraLivro);
+    }
+    public void AdicionaReport(Report report){
+        reportes.add(report);
     }
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r){
         for (int i=0 ;i<emprestimos.size();i++){
