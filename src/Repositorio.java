@@ -13,6 +13,5 @@ public interface Repositorio {
     public void adicionaPropostaRequisicao(PropostaAquisicao proposta);
     public void adicionaRequisicaoCompra(RequisicaoCompra requisicaoCompra);
     public void adicionaRequisicaoCompraLivro(RequisicaoCompraLivro requisicaoCompraLivro);
-    public void AdicionaReport(Report report);
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r);
 }
