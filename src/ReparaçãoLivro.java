@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class ReparaçãoLivro {
-    private Reparador reparador;
+    private Reparador reparador;//envio livros???
     private Copia copia;
 
     public ReparaçãoLivro(Reparador reparador, Copia copia) {

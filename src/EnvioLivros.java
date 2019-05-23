@@ -1,15 +1,13 @@
 public class EnvioLivros {
-    private Orçamento orçamento;
+    private ValidaçãoOrçamento orçamento;
     private Funcionario funcionario;
-    private Copia copia;
 
-    public EnvioLivros(Orçamento orçamento, Funcionario funcionario, Copia copia) {
+    public EnvioLivros(ValidaçãoOrçamento orçamento, Funcionario funcionario) {
         this.orçamento = orçamento;
         this.funcionario = funcionario;
-        this.copia = copia;
     }
 
-    public Orçamento getOrçamento() {
+    public ValidaçãoOrçamento getOrçamento() {
         return orçamento;
     }
 
@@ -17,7 +15,4 @@ public class EnvioLivros {
         return funcionario;
     }
 
-    public Copia getCopia() {
-        return copia;
-    }
 }
