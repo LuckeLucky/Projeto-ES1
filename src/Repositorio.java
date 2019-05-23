@@ -16,5 +16,9 @@ public interface Repositorio {
     public void adicionaOrçamentos(Orçamento orçamento);
     public void adicionaReparadores(Reparador reparador);
     public void adicionaResponsavelReparaçao(ResponsávelReparação responsável_Reparação);
+    public void adicionaValidacaoOrcamento(ValidaçãoOrçamento validaçãoOrçamento);
+    public void adicionaEnvioLivro(EnvioLivros envioLivros);
+    public void adicionaMelhorOrçamento(MelhorOrçamento melhorOrçamento);
+    public void adicionaReparaçãoLivros(ReparaçãoLivro reparaçãoLivro);
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r);
 }

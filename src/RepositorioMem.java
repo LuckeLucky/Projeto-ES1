@@ -21,6 +21,10 @@ public class RepositorioMem implements Repositorio {
     private ArrayList<Orçamento> orçamentos = new ArrayList<Orçamento>();
     private ArrayList<Reparador> reparadores = new ArrayList<Reparador>();
     private ArrayList<ResponsávelReparação> responsavelreparaçao = new ArrayList<ResponsávelReparação>();
+    private ArrayList<ValidaçãoOrçamento> ValidaçãoOrçamentos = new ArrayList<ValidaçãoOrçamento>();
+    private ArrayList<EnvioLivros> LivrosEnviados = new ArrayList<EnvioLivros>();
+    private ArrayList<MelhorOrçamento> melhoresOrçamentos = new ArrayList<MelhorOrçamento>();
+    private ArrayList<ReparaçãoLivro> LivrosReparados = new ArrayList<ReparaçãoLivro>();
 
     public RepositorioMem() {
     }
@@ -89,12 +93,28 @@ public class RepositorioMem implements Repositorio {
         reparadores.add(reparador);
     }
 
+    public void adicionaReporte(Report report){
+        reportes.add(report);
+    }
+
     public void adicionaResponsavelReparaçao(ResponsávelReparação responsável_Reparação) {
         responsavelreparaçao.add(responsável_Reparação);
     }
 
-    public void adicionaReporte(Report report){
-        reportes.add(report);
+    public void adicionaValidacaoOrcamento(ValidaçãoOrçamento validaçãoOrçamento){
+        ValidaçãoOrçamentos.add(validaçãoOrçamento);
+    }
+
+    public void adicionaEnvioLivro(EnvioLivros envioLivros){
+        LivrosEnviados.add(envioLivros);
+    }
+
+    public void adicionaMelhorOrçamento(MelhorOrçamento melhorOrçamento){
+        melhoresOrçamentos.add(melhorOrçamento);
+    }
+
+    public void adicionaReparaçãoLivros(ReparaçãoLivro reparaçãoLivro){
+        LivrosReparados.add(reparaçãoLivro);
     }
 
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r) {
