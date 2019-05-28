@@ -26,6 +26,7 @@ public class RepositorioMem implements Repositorio {
     private ArrayList<MelhorOrçamento> melhoresOrçamentos = new ArrayList<MelhorOrçamento>();
     private ArrayList<ReparaçãoLivro> LivrosReparados = new ArrayList<ReparaçãoLivro>();
     private ArrayList<DevolucaoLivro> DevolucaoLivros = new ArrayList<DevolucaoLivro>();
+    private ArrayList<Pagamento> pagamentos=new ArrayList<Pagamento>();
 
     public RepositorioMem() {
     }
@@ -120,6 +121,9 @@ public class RepositorioMem implements Repositorio {
 
     public void adicionaDevolucaoLivro(DevolucaoLivro devolucaoLivro){
         DevolucaoLivros.add(devolucaoLivro);
+    }
+    public void adicionaPagamento(Pagamento pagamento){
+        pagamentos.add(pagamento);
     }
 
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r) {
