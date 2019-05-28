@@ -1,19 +1,29 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class ReparaçãoLivro {
-    private Reparador reparador;//envio livros???
-    private Copia copia;
 
-    public ReparaçãoLivro(Reparador reparador, Copia copia) {
-        this.reparador = reparador;
-        this.copia = copia;
+    private EnvioLivros envioLivros;
+    private LocalDate data_inicio;
+
+    public EnvioLivros getEnvioLivros() {
+        return envioLivros;
     }
 
-    public Reparador getReparador() {
-        return reparador;
+    public void setEnvioLivros(EnvioLivros envioLivros) {
+        this.envioLivros = envioLivros;
     }
 
-    public Copia getCopia() {
-        return copia;
+    public LocalDate getData_inicio() {
+        return data_inicio;
+    }
+
+    public void setData_inicio(LocalDate data_inicio) {
+        this.data_inicio = data_inicio;
+    }
+
+    public ReparaçãoLivro(EnvioLivros envioLivros, LocalDate data_inicio) {
+        this.envioLivros = envioLivros;
+        this.data_inicio = data_inicio;
     }
 }

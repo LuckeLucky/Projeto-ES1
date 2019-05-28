@@ -20,6 +20,6 @@ public interface Repositorio {
     public void adicionaEnvioLivro(EnvioLivros envioLivros);
     public void adicionaMelhorOrçamento(MelhorOrçamento melhorOrçamento);
     public void adicionaReparaçãoLivros(ReparaçãoLivro reparaçãoLivro);
-    public void adicionaPagamento(Pagamento pagamento);
+    public void adicionaDevolucaoLivro(DevolucaoLivro devolucaoLivro);
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r);
 }
