@@ -27,6 +27,7 @@ public class RepositorioMem implements Repositorio {
     private ArrayList<ReparaçãoLivro> LivrosReparados = new ArrayList<ReparaçãoLivro>();
     private ArrayList<DevolucaoLivro> DevolucaoLivros = new ArrayList<DevolucaoLivro>();
     private ArrayList<Pagamento> pagamentos=new ArrayList<Pagamento>();
+    private ArrayList<Factura> facturas = new ArrayList<>();
 
     public RepositorioMem() {
     }
@@ -125,6 +126,7 @@ public class RepositorioMem implements Repositorio {
     public void adicionaPagamento(Pagamento pagamento){
         pagamentos.add(pagamento);
     }
+    public void adicionaFacturas(Factura factura){ facturas.add(factura); }
 
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r) {
         for (int i = 0; i < emprestimos.size(); i++) {

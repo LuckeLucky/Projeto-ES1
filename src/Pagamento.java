@@ -1,9 +1,9 @@
 public class Pagamento {
     private Factura factura;
     private ResponsávelReparação responsávelreparação;
-    private MétodoPagamento metodopagamento;
+    private String metodopagamento;
 
-    public Pagamento(Factura factura, ResponsávelReparação responsávelreparação, MetodoPagamento metodopagamento) {
+    public Pagamento(Factura factura, ResponsávelReparação responsávelreparação, String metodopagamento) {
         this.factura = factura;
         this.responsávelreparação = responsávelreparação;
         this.metodopagamento = metodopagamento;
@@ -17,7 +17,7 @@ public class Pagamento {
         return responsávelreparação;
     }
 
-    public MetodoPagamento getMetodopagamento() {
+    public String getMetodopagamento() {
         return metodopagamento;
     }
 }

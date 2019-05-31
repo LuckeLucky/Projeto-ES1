@@ -22,6 +22,7 @@ public interface Repositorio {
     public void adicionaReparaçãoLivros(ReparaçãoLivro reparaçãoLivro);
     public void adicionaDevolucaoLivro(DevolucaoLivro devolucaoLivro);
     public void adicionaPagamento(Pagamento pagamento);
+    public void adicionaFacturas(Factura factura);
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r);
 
 }
